@@ -16,15 +16,23 @@
 }
 .box2 {
   width: 450px;
-  height: 650px;
-  margin-top: 185px;
-  display: inline-block;
+  height: 550px;
 }
 .img-office {
   height: 750px;
   width: 610px;
-  margin-top: 130px;
-  display: inline-block;
+}
+/* 235 px for sting ray section */
+.container-flex-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 155px;
+  margin-top: 145px;
 }
 
-/* 195 px for sting ray section */
+.font {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
