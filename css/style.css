@@ -10,6 +10,27 @@ html {
   background: linear-gradient(#56b8ec, #193747);
 }
 
+.no-drag {
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.footer {
+  background: #163240;
+  color: #fff;
+  z-index: 101;
+}
+
 /* CONTAINERS */
 .container-white {
   background-color: white;
@@ -41,7 +62,7 @@ html {
 
 /* BOTTOM BAR */
 .footer {
-  height: 150px;
+  height: 215px;
   width: 100%;
   background-color: #163240;
 }
