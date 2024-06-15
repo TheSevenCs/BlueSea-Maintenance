@@ -1,0 +1,22 @@
+.header {
+  width: 750px;
+  height: 355px;
+  margin-top: 60px;
+}
+.container-flex-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 85px;
+  margin-top: 130px;
+}
+
+.img-contact {
+  height: 670px;
+  width: 670px;
+  border-radius: 75px;
+}
+.container-contact {
+  height: 135px;
+  width: 650px;
+}

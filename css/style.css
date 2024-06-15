@@ -39,6 +39,12 @@ html {
   padding: 10px 50px;
 }
 
+.font {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
 /* CONTAINERS */
 .container-white {
   background-color: white;
