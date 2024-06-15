@@ -80,6 +80,16 @@ html {
   width: 100%;
   background-color: #163240;
 }
+.marmot-credit-flex {
+  margin-top: 46px;
+  position: absolute;
+  gap: 10px;
+  width: 300px;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .fish {
   position: absolute;
