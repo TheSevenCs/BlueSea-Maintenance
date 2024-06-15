@@ -31,13 +31,21 @@ html {
   z-index: 101;
 }
 
+.white-text-box {
+  background-color: white;
+  border: 4px solid black;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 1);
+  display: inline;
+  padding: 10px 50px;
+}
+
 /* CONTAINERS */
 .container-white {
   background-color: white;
 }
 .border-shadow {
   border: 4px solid black;
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 1);
   /* Horizontal offset, vertical offset, blur radius, color(r, g, b, transparency) */
 }
 
@@ -73,12 +81,11 @@ html {
   background-color: rgba(0, 0, 0, 0.5); /* Darken the background when active */
 }
 
-/* BOTTOM BAR */
 .footer {
-  min-width: 1920px;
   height: 215px;
   width: 100%;
   background-color: #163240;
+  margin: 0 auto;
 }
 .marmot-credit-flex {
   margin-top: 46px;
@@ -89,6 +96,20 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.social-media-flex {
+  margin-top: 46px;
+  position: absolute;
+  gap: 11px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-media-row-flex {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .fish {
