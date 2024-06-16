@@ -85,7 +85,14 @@ html {
 .nav-bar a:hover {
   /* filter: brightness(0.7); Darken the image */
   background-color: rgba(0, 0, 0, 0.25); /* Darken the background on hover */
-  transform: translateY(-5px); 
+}
+.nav-bar a span {
+  position: relative; /* Create a positioning context */
+  z-index: 1; /* Ensure text appears above other content */
+  transition: transform 0.2s ease-out; /* Added transform for movement */
+}
+.nav-bar a:hover span {
+  transform: translateY(5px); /* Move text up by 5px on hover */
 }
 .nav-bar a:active {
   /* filter: brightness(0.2); Darken the image */
