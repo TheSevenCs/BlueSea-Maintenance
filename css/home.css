@@ -7,6 +7,7 @@
 .scroll-arrow {
   width: 100px;
   margin-top: 200%;
+  animation: arrow-down 0.5s 0.5s linear backwards;
 }
 
 .banner {
@@ -48,10 +49,6 @@
   font-weight: bold;
 }
 
-.animateSIL {
-  opacity: 0;
-  transition: all linear 0.6s;
-}
 @media (prefers-reduced-motion) {
   .hidden {
     transition: none;
@@ -62,4 +59,41 @@
   animation: slideInLeft 0.7s linear forwards;
   opacity: 1;
   filter: blur(0);
+}
+
+@keyframes arrow-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animateSIL {
+  opacity: 0;
+}
+
+.fu {
+  animation: fade-up 1s 0.1s ease-out backwards;
+}
+
+.delayed-animation1 {
+  animation-delay: 0.3s;
+}
+.delayed-animation2 {
+  animation-delay: 0.4s;
 }

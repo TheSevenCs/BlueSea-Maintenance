@@ -9,19 +9,9 @@
   }
 }
 
-@keyframes fishAnimation {
-  0%,
-  100% {
-    transform: rotate(0deg) translateX(5px); /* Starting and ending position */
-  }
-  50% {
-    transform: rotate(3deg) translateX(0px); /* Middle point, rotated */
-  }
-}
-
-@keyframes stingray1 {
+@keyframes stingray {
   from {
-    transform: translateX(-300px);
+    transform: translateX(300px);
     filter: blur(2px);
   }
   to {
@@ -32,15 +22,16 @@
 
 @keyframes stingray2 {
   from {
-    transform: translateX(300px) scaleX(-1);
+    transform: translateX(-300px);
     filter: blur(2px);
   }
   to {
-    transform: translateX(0) scaleX(-1);
+    transform: translateX(0);
     filter: blur(0);
   }
 }
-@keyframes stingray1-out {
+
+@keyframes stingray-out {
   from {
     transform: translateX(0);
     filter: blur(0);
@@ -51,17 +42,27 @@
   }
 }
 
-@keyframes stingray2-out {
-  from {
-    transform: translateX(0) scaleX(-1);
-    filter: blur(0);
+@keyframes stingray-hover {
+  0%,
+  100% {
+    transform: translateY(5px); /* Starting and ending position */
   }
-  to {
-    transform: translateX(300px) scaleX(-1);
-    filter: blur(2px);
+  50% {
+    transform: translateY(0px); /* Middle point, rotated */
   }
 }
-Explanat .center {
+
+@keyframes fishAnimation {
+  0%,
+  100% {
+    transform: rotate(0deg) translateX(5px); /* Starting and ending position */
+  }
+  50% {
+    transform: rotate(1deg) translateX(0px); /* Middle point, rotated */
+  }
+}
+
+.center {
   margin-left: 50%;
   transform: translateX(-50%);
 }
@@ -167,6 +168,7 @@ html {
 }
 .nav-bar a:hover span {
   transform: translateY(5px); /* Move text up by 5px on hover */
+  font-size: larger;
 }
 .nav-bar a:active {
   /* filter: brightness(0.2); Darken the image */
@@ -221,20 +223,17 @@ html {
   animation: fishAnimation 3s linear infinite both;
 }
 
-.stingray1-animation {
-  animation: stingray1 0.5s ease-in both;
+.stingray-animation {
+  animation: stingray 0.5s ease-in both;
 }
 
-.stingray2-animation {
-  animation: stingray2 0.5s ease-in both;
+.stingray-hover-animation {
+  animation: stingray-hover 0.5s linear infinite both;
+  animation-delay: 1s; /* Adjust the delay as per your preference */
 }
 
-.stingray1-out-animation {
+.stingray-out-animation {
   animation: stingray1-out 0.5s ease-in both;
-}
-
-.stingray2-out-animation {
-  animation: stingray2-out 0.5s ease-in both;
 }
 
 .slideInLeft {
