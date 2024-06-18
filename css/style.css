@@ -69,13 +69,6 @@ html {
   transform: translateX(-50%);
 }
 
-.home-logo {
-  background-color: rgba(255, 255, 255, 0.68);
-  width: 100%; /* Adjusted to cover the full width of its container */
-  margin-top: 5%;
-  /* height: 200px; */
-}
-
 /* PROPERTIES */
 .no-drag {
   user-select: none;
@@ -206,9 +199,6 @@ html {
   width: 100%;
   background-color: #163240;
   margin: 0 auto;
-}
-.footer {
-  background: #163240;
   color: #fff;
   z-index: 101;
 }
