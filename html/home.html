@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlueSea Maintenance - Home</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/home.css" />
-
-    <title>homepage</title>
   </head>
   <body>
     <!-- NAV BAR -->
@@ -20,26 +19,37 @@
         ><span>Contact Us</span></a
       >
     </div>
-    <!-- homepage's banner -->
-    <div class="banner">
-      <div class="home-logo">
+
+    <!-- HOMEPAGE HEADER -->
+    <div class="container-header">
+      <!-- IMAGE -->
+      <img src="/images/home/home-background-banner.png" class="image-header" />
+
+      <!-- BANNER -->
+      <div class="banner-header" style="height: 50%; top: 22.5%">
         <img
-          class="no-drag no-select center"
-          src="../images/home/logo.png"
-          alt="bluesea maintenance logo"
+          src="/images/home/logo.png"
+          class="no-drag no-select"
+          style="max-height: 100%"
+          alt="BlueSea Maintenance Logo"
         />
       </div>
-      <div>
-        <img
-          class="scroll-arrow no-drag no-select"
-          src="../images/home/arrow-down.png"
-          alt="scroll down"
-        />
-      </div>
+
+      <!-- DOWN SCROLL -->
+      <img
+        class="scroll-arrow no-drag no-select"
+        src="../images/home/arrow-down.png"
+        alt="Scroll Down"
+      />
+
+      <!-- BOTTOM LINE -->
+      <div
+        class="horizontal-line"
+        style="position: absolute; bottom: 2.5vh"
+      ></div>
     </div>
 
-    <!-- white horizontal line -->
-    <hr style="border: 8px solid white; margin-top: -1px" />
+    <!-- FISH -->
     <div
       class="fish"
       style="
@@ -209,7 +219,6 @@
     </div>
 
     <!-- footer and stingray -->
-
     <div style="display: flex; justify-content: space-between">
       <img
         class="stingray stingray-hover stingray-animation"
@@ -255,7 +264,7 @@
         </div>
       </div>
       <div class="marmot-credit-flex">
-        <div style="font-size: 25px">Coded and designed by</div>
+        <div style="font-size: 25px">Coded and Designed by</div>
         <div>
           <a
             href="https://marmot-tech.ca"
@@ -267,6 +276,8 @@
         </div>
       </div>
     </div>
+
+    <!-- IMPORT -->
     <script src="../js/home.js"></script>
   </body>
 </html>

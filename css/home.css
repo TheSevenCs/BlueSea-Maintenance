@@ -1,23 +1,30 @@
-.home-logo {
-  background-color: rgba(255, 255, 255, 0.68);
-  width: 100%; /* Adjusted to cover the full width of its container */
-  margin-top: 5%;
+.logo {
+  height: 100%;
+  width: auto;
 }
 
 .scroll-arrow {
   width: 100px;
   margin-top: 200%;
   animation: arrow-down 0.5s 0.5s linear backwards;
+
+  position: absolute;
+  bottom: 5vh;
 }
 
 .banner {
   background-image: url("../images/home/home-background-banner.png");
-  max-width: 1920px;
+  /* max-width: 1920px; */
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  background-size: cover; /* Scale the background image to cover the entire area */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-position: center; /* Center the background image */
 }
 
 .content-section {
