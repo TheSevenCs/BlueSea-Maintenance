@@ -255,3 +255,14 @@ html {
 .slideInLeft {
   animation: slideInLeftAnimation 0.7s ease-in both;
 }
+
+img {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

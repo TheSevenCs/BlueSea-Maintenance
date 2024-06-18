@@ -2,11 +2,11 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.remove("animate");
+      entry.target.classList.remove("before-animation");
       entry.target.classList.add("fu");
     }
   });
 });
-
 
 const stingrayObserver = new IntersectionObserver(
   (entries) => {

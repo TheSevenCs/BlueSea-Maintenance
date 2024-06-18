@@ -104,3 +104,8 @@
 .delayed-animation2 {
   animation-delay: 0.4s;
 }
+
+.before-animation {
+  opacity: 0;
+  transform: translateY(15px);
+}
