@@ -239,15 +239,19 @@ html {
   animation: fishAnimation 3s linear infinite both;
 }
 
+.stingray-style {
+  display: inline-block;
+  width: 50%;
+  max-height: 696px;
+  margin-top: 198px;
+}
 .stingray-animation {
   animation: stingray 0.5s ease-in both;
 }
-
 .stingray-hover-animation {
   animation: stingray-hover 0.5s linear infinite both;
   animation-delay: 1s; /* Adjust the delay as per your preference */
 }
-
 .stingray-out-animation {
   animation: stingray1-out 0.5s ease-in both;
 }
