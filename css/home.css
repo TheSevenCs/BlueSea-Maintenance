@@ -42,6 +42,7 @@
 
 .blue-text-box {
   background-color: #005662;
+  font-family: "Roboto";
   color: white;
   width: 620px;
   font-size: 28px;
@@ -108,4 +109,8 @@
 .before-animation {
   opacity: 0;
   transform: translateY(15px);
+}
+
+.caption {
+  font-family: "Archivo Black", sans-serif;
 }
