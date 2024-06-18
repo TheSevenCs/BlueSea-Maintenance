@@ -1,3 +1,71 @@
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+    filter: blur(2px);
+  }
+  to {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes fishAnimation {
+  0%,
+  100% {
+    transform: rotate(0deg) translateX(5px); /* Starting and ending position */
+  }
+  50% {
+    transform: rotate(3deg) translateX(0px); /* Middle point, rotated */
+  }
+}
+
+@keyframes stingray1 {
+  from {
+    transform: translateX(-300px);
+    filter: blur(2px);
+  }
+  to {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes stingray2 {
+  from {
+    transform: translateX(300px) scaleX(-1);
+    filter: blur(2px);
+  }
+  to {
+    transform: translateX(0) scaleX(-1);
+    filter: blur(0);
+  }
+}
+@keyframes stingray1-out {
+  from {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+  to {
+    transform: translateX(-300px);
+    filter: blur(2px);
+  }
+}
+
+@keyframes stingray2-out {
+  from {
+    transform: translateX(0) scaleX(-1);
+    filter: blur(0);
+  }
+  to {
+    transform: translateX(300px) scaleX(-1);
+    filter: blur(2px);
+  }
+}
+Explanat .center {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 body,
 html {
   height: auto;
@@ -148,6 +216,27 @@ html {
   height: 678px;
   width: 678px;
 }
-.fish:hover {
-  transform: rotate(-1deg);
+
+.element-with-fish-animation {
+  animation: fishAnimation 3s linear infinite both;
+}
+
+.stingray1-animation {
+  animation: stingray1 0.5s ease-in both;
+}
+
+.stingray2-animation {
+  animation: stingray2 0.5s ease-in both;
+}
+
+.stingray1-out-animation {
+  animation: stingray1-out 0.5s ease-in both;
+}
+
+.stingray2-out-animation {
+  animation: stingray2-out 0.5s ease-in both;
+}
+
+.slideInLeft {
+  animation: slideInLeftAnimation 0.7s ease-in both;
 }
