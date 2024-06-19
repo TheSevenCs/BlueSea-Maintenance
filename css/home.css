@@ -99,13 +99,6 @@
   animation: fade-up 1s 0.1s ease-out backwards;
 }
 
-.delayed-animation1 {
-  animation-delay: 0.3s;
-}
-.delayed-animation2 {
-  animation-delay: 0.4s;
-}
-
 .before-animation {
   opacity: 0;
   transform: translateY(15px);
