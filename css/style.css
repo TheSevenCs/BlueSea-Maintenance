@@ -170,6 +170,8 @@ html {
   display: flex;
   width: 100%;
   height: 75px;
+  z-index: 10;
+  transition: background-color 0.3s ease;
 }
 .nav-bar a {
   flex: 1;
@@ -201,6 +203,9 @@ html {
 .nav-bar a:active {
   /* filter: brightness(0.2); Darken the image */
   background-color: rgba(0, 0, 0, 0.5); /* Darken the background when active */
+}
+.nav-bar-colour {
+  background: #3a3a3a;
 }
 
 .footer {
