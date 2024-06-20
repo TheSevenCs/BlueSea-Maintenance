@@ -5,7 +5,6 @@ const scrollThreshold = 0.9 * viewportHeight - 40;
 
 function updateNavbarStyle() {
   const navbar = document.getElementById("navbar");
-
   if (window.scrollY > scrollThreshold) {
     navbar.style.backgroundColor = "#3a3a3a";
   } else {
@@ -13,21 +12,12 @@ function updateNavbarStyle() {
   }
 }
 document.querySelectorAll(".nav-bar a").forEach((link) => {
-  link.addEventListener("mouseenter", handleMouseEnter);
-  link.addEventListener("touchstart", handleTouchStart);
+  link.addEventListener("mouseenter", function (e) {
+    const rect = link.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    link.style.setProperty("--x", `${x}px`);
+  });
 });
-
-function handleMouseEnter(e) {
-  const rect = e.currentTarget.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  e.currentTarget.style.setProperty("--x", `${x}px`);
-}
-
-function handleTouchStart(e) {
-  const rect = e.currentTarget.getBoundingClientRect();
-  const x = e.touches[0].clientX - rect.left;
-  e.currentTarget.style.setProperty("--x", `${x}px`);
-}
 // update while scrolling
 window.addEventListener("scroll", updateNavbarStyle);
 
