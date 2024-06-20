@@ -57,6 +57,7 @@
   }
 }
 
+
 body,
 html {
   height: auto;
@@ -169,41 +170,59 @@ html {
   position: fixed;
   display: flex;
   width: 100%;
-  height: 75px;
+  height: 60px;
   z-index: 10;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.4s ease-in;
 }
+
 .nav-bar a {
   flex: 1;
   height: 100%;
   background-color: transparent;
   border: none;
-  transition: background-color 0.3s; /* for smooth transition */
+  transition: background-color 0.3s;
   text-decoration: none;
-  color: white; /* font colour */
+  color: white;
   font-size: 20px;
   text-align: center;
-  display: flex; /* Enable flex properties for child elements */
-  justify-content: center; /* Center text horizontally */
-  align-items: center; /* Center text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
-.nav-bar a:hover {
-  /* filter: brightness(0.7); Darken the image */
-  background-color: rgba(0, 0, 0, 0.25); /* Darken the background on hover */
+
+.nav-bar a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: var(--x, 50%);
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: width 0.4s ease-in-out;
+  transform: translateX(-50%);
+  pointer-events: none;
 }
+
+.nav-bar a:hover::before {
+  width: 300%;
+}
+
 .nav-bar a span {
-  position: relative; /* Create a positioning context */
-  z-index: 1; /* Ensure text appears above other content */
-  transition: transform 0.2s ease-out; /* Added transform for movement */
+  position: relative;
+  z-index: 1;
+  transition: transform 0.5s ease-out;
 }
+
 .nav-bar a:hover span {
-  transform: translateY(5px); /* Move text up by 5px on hover */
   font-size: larger;
 }
+
 .nav-bar a:active {
-  /* filter: brightness(0.2); Darken the image */
-  background-color: rgba(0, 0, 0, 0.5); /* Darken the background when active */
+  background-color: rgba(0, 0, 0, 0.5);
 }
+
 .nav-bar-colour {
   background: #3a3a3a;
 }

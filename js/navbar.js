@@ -12,7 +12,22 @@ function updateNavbarStyle() {
     navbar.style.backgroundColor = "transparent";
   }
 }
+document.querySelectorAll(".nav-bar a").forEach((link) => {
+  link.addEventListener("mouseenter", handleMouseEnter);
+  link.addEventListener("touchstart", handleTouchStart);
+});
 
+function handleMouseEnter(e) {
+  const rect = e.currentTarget.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  e.currentTarget.style.setProperty("--x", `${x}px`);
+}
+
+function handleTouchStart(e) {
+  const rect = e.currentTarget.getBoundingClientRect();
+  const x = e.touches[0].clientX - rect.left;
+  e.currentTarget.style.setProperty("--x", `${x}px`);
+}
 // update while scrolling
 window.addEventListener("scroll", updateNavbarStyle);
 

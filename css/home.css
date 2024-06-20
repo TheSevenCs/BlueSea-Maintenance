@@ -15,12 +15,13 @@
 }
 
 .scroll-arrow {
-  width: 100px;
-  margin-top: 200%;
+  width: 80px;
   animation: arrow-down 0.5s 0.5s linear backwards;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5));
+  border-radius: 50%;
 
   position: absolute;
-  bottom: 5vh;
+  bottom: 9vh;
 }
 
 .banner {
@@ -85,7 +86,7 @@
 @keyframes arrow-down {
   0% {
     opacity: 0;
-    transform: translateY(-30px) scale(0.9);
+    transform: translateY(-120px) scale(0.9);
   }
   100% {
     opacity: 1;
@@ -104,6 +105,22 @@
   }
 }
 
+@keyframes spinArrow {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5));
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-180deg) scale(1);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.15));
+  }
+}
+
+.animateArrow {
+  animation: spinArrow 0.3s ease-out forwards;
+}
 .animateSIL {
   opacity: 0;
 }

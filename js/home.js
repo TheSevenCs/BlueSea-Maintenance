@@ -1,3 +1,7 @@
+const viewportHeight = window.innerHeight;
+
+const scrollThreshold = 0.9 * viewportHeight - 400;
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -21,8 +25,21 @@ const stingrayObserver = new IntersectionObserver(
   { threshold: 0.5 }
 );
 
+function spinArrow() {
+  const arrow = document.getElementById("down-arrow");
+
+  if (window.scrollY > scrollThreshold) {
+    arrow.classList.add("animateArrow");
+  }
+  if (window.scrollY < scrollThreshold) {
+    arrow.classList.remove("animateArrow");
+  }
+}
+
 const stingrayElements = document.querySelectorAll(".stingray-animation");
 stingrayElements.forEach((el) => stingrayObserver.observe(el));
 
 const fadeElements = document.querySelectorAll(".animate");
 fadeElements.forEach((el) => observer.observe(el));
+
+window.addEventListener("scroll", spinArrow);
