@@ -19,3 +19,6 @@ window.addEventListener("scroll", function () {
 
 // lower % values make the image scroll slower == image is "further away from the screen"
 // subtracting values from the translateY to bring the image further up the page
+// ** crop fish image and readjust values to match
+// setting the z-index values creates clear overlap (value images)
+// unspecified z-index values makes somewhat transparent effect (text boxes)
