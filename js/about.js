@@ -1,25 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var elements = document.querySelectorAll(".animated-center");
+// document.addEventListener("DOMContentLoaded", function () {
+//   var elements = document.querySelectorAll(".animated-center");
 
-  // Create an intersection observer
-  var observer = new IntersectionObserver(
-    function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-          // Unobserve the element after adding the class to prevent the animation from repeating
-          // observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
+//   // Create an intersection observer
+//   var observer = new IntersectionObserver(
+//     function (entries) {
+//       entries.forEach(function (entry) {
+//         if (entry.isIntersecting) {
+//           entry.target.classList.add("animate");
+//           // Unobserve the element after adding the class to prevent the animation from repeating
+//           // observer.unobserve(entry.target);
+//         }
+//       });
+//     },
+//     { threshold: 0.5 }
+//   );
 
-  // Observe each target element
-  elements.forEach(function (element) {
-    observer.observe(element);
-  });
-});
+//   // Observe each target element
+//   elements.forEach(function (element) {
+//     observer.observe(element);
+//   });
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
   var elements = document.querySelectorAll(".animated");
