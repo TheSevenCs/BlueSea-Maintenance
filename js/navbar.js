@@ -23,3 +23,6 @@ window.addEventListener("scroll", updateNavbarStyle);
 
 // update from initial state
 document.addEventListener("DOMContentLoaded", updateNavbarStyle);
+
+// note that the function is not called as "function()"
+// and is instead called as "function"
