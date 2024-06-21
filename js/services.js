@@ -1,19 +1,23 @@
 const infoHeight = "200px";
 
 function expand(info) {
-  console.log("INFO HEIGHT: ", info.style.height);
-  if (info.style.height === "0px" || info.style.height === "") {
-    console.log("EXPANDING");
-    info.style.height = infoHeight;
-    info.style.border = "4px solid black";
-    info.style.boxShadow = "5px 5px 12px rgba(0, 0, 0, 1)";
-    info.style.opacity = "1";
-  } else {
-    console.log("COLLAPSING");
-    info.style.height = "0px";
-    info.style.border = "0px solid black";
-    info.style.boxShadow = "5px 5px 12px rgba(0, 0, 0, 0)";
-    info.style.opacity = "0";
+  try {
+    // console.log("INFO HEIGHT: ", info.style.height);
+    if (info.style.height === "0px" || info.style.height === "") {
+      console.log("EXPANDING");
+      info.style.height = infoHeight;
+      info.style.border = "4px solid black";
+      info.style.boxShadow = "5px 5px 12px rgba(0, 0, 0, 1)";
+      info.style.opacity = "1";
+    } else {
+      console.log("COLLAPSING");
+      info.style.height = "0px";
+      info.style.border = "0px solid black";
+      info.style.boxShadow = "5px 5px 12px rgba(0, 0, 0, 0)";
+      info.style.opacity = "0";
+    }
+  } catch (error) {
+    console.error("FROM function expand(): ", error);
   }
 }
 
