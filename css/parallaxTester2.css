@@ -1,0 +1,64 @@
+body,
+html {
+  height: auto;
+  margin: 0;
+  /* background: linear-gradient(#56b8ec, #193747); */
+  background-color: #0000ff;
+  background-size: 100% 100vh; /* Cover the entire viewport height */
+}
+
+.content {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+
+  z-index: 5;
+
+  color: black;
+  font-size: 80px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.line-white {
+  width: 100%;
+  height: 25px;
+  background-color: gray;
+  z-index: 5;
+}
+
+.line-black {
+  width: 100%;
+  height: 25px;
+  background: black;
+  z-index: 3;
+}
+
+.banner {
+  width: 100%;
+  height: 150px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+
+  position: absolute;
+}
+.banner1 {
+  background-color: #00ff00;
+  /* opacity: 0.5; */
+  z-index: 2;
+  top: 325px;
+}
+
+.banner2 {
+  background-color: #ff0000;
+  /* opacity: 0.5; */
+  top: 525px;
+  z-index: 1;
+}
