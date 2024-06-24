@@ -1,20 +1,35 @@
 window.addEventListener("scroll", function () {
   const scrollPosition = window.scrollY;
 
-  // Adjust the scroll speed for each group
-  const group1 = document.getElementById("group1");
-  const group2 = document.getElementById("group2");
   const fish1 = document.getElementById("fish1");
   const fish2 = document.getElementById("fish2");
   const fish3 = document.getElementById("fish3");
 
-  //   group1.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
-  //   group2.style.transform = "translateY(" + scrollPosition * 0.3 + "px)";
+  const ray1 = document.getElementById("ray1");
+  const rays2 = document.getElementById("rays2");
+
+  const anchor = document.getElementById("anchor");
+
   fish1.style.transform =
-    "translateY(" + (scrollPosition * 0.35 - 300) + "px) scaleX(-1)";
-  fish2.style.transform = "translateY(" + (scrollPosition * 0.35 - 650) + "px)";
+    "translateY(" + (scrollPosition * 0.3 - 200) + "px) scaleX(-1)";
+  fish2.style.transform = "translateY(" + (scrollPosition * 0.3 - 700) + "px)";
   fish3.style.transform =
-    "translateY(" + (scrollPosition * 0.35 - 1100) + "px) scaleX(-1)";
+    "translateY(" + (scrollPosition * 0.3 - 950) + "px) scaleX(-1)";
+
+  // const rays2XShift = scrollPosition * 0.9 - 1200;
+  // const rays2YShift = scrollPosition * 0.3 + 1300;
+  // rays2.style.transform =
+  //   "translateX(" + rays2XShift + "px) " + "translateY(" + rays2YShift + "px)";
+
+  anchor.style.transform =
+    "translateY(" + (scrollPosition * 0.83 - 1500) + "px)";
+
+  if (anchor) {
+    console.log("DOND DALK DO ME LIKE A DHAD RIGHD NOW");
+  }
+  // console.log("RAY X-POS: ", rays2XShift);
+  // console.log("RAY Y-POS: ", rays2YShift);
+  // console.log("TOP OF PAGE: ", scrollPosition);
 });
 
 // lower % values make the image scroll slower == image is "further away from the screen"

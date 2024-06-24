@@ -50,8 +50,9 @@
       ></div>
     </div>
 
-    <!-- FISH -->
+    <!-- FISH 1 -->
     <div
+      id="fish1"
       class="fish"
       style="
         -webkit-transform: scaleX(-1);
@@ -67,7 +68,8 @@
         alt="indigenous fish picture"
       />
     </div>
-    <!-- value title and infobox -->
+
+    <!-- OUR CORE VALUES & DESC -->
     <div style="display: flex; flex-direction: column; align-items: center">
       <h1 class="white-text-box caption" style="font-size: 64px">
         Our Core Values
@@ -87,7 +89,7 @@
       </p>
     </div>
 
-    <!-- hard work section -->
+    <!-- HARD WORK SECTION -->
     <div class="content-section">
       <div
         class="animate white-text-box before-animation caption"
@@ -99,6 +101,7 @@
         <img
           class="img-value animate before-animation delayed-animation1"
           src="../images/home/hardwork.png"
+          style="z-index: 2"
         />
         <div
           class="blue-text-box border-shadow animate before-animation delayed-animation2"
@@ -125,8 +128,8 @@
       </div>
     </div>
 
-    <!-- FISH -->
-    <div class="fish">
+    <!-- FISH 2 -->
+    <div id="fish2" class="fish">
       <img
         class="element-with-fish-animation"
         src="../images/fish.png"
@@ -134,8 +137,11 @@
         alt="indigenous fish picture"
       />
     </div>
+    <div id="anchor" class="fish center">
+      <img src="/images/anchor.png" />
+    </div>
 
-    <!-- trust section -->
+    <!-- TRUST SECTION -->
     <div class="content-section">
       <div
         class="animate white-text-box before-animation caption"
@@ -160,7 +166,7 @@
           <span class="emphasize">integrity</span> are the hallmarks of our
           approach, ensuring that our clients can depend on us to fulfill our
           promises and deliver
-          <span class="emphasize">quality service</span> .<br /><br />
+          <span class="emphasize">quality service</span>.<br /><br />
 
           We build <span class="emphasize">long-lasting</span> relationships by
           being <span class="emphasize">reliable</span> partners who prioritize
@@ -169,12 +175,14 @@
         <img
           class="img-value animate delayed-animation2 before-animation"
           src="/images/home/trust.png"
+          style="z-index: 2"
         />
       </div>
     </div>
 
-    <!-- FISH -->
+    <!-- FISH 3 -->
     <div
+      id="fish3"
       class="fish"
       style="-webkit-transform: scaleX(-1); transform: scaleX(-1); right: 0"
     >
@@ -186,7 +194,7 @@
       />
     </div>
 
-    <!-- organization section -->
+    <!-- ORGANISATION SECTION -->
     <div class="content-section">
       <div
         class="white-text-box animate before-animation caption"
@@ -198,6 +206,7 @@
         <img
           class="img-value animate delayed-animation1 before-animation"
           src="/images/home/organization.png"
+          style="z-index: 2"
         />
         <div
           class="blue-text-box border-shadow animate delayed-animation2 before-animation"
@@ -214,36 +223,65 @@
           we ensure that each task is executed<span class="emphasize"
             >seamlessly</span
           >
-          and <span class="emphasize">on schedule</span> .<br /><br />
+          and <span class="emphasize">on schedule</span>.<br /><br />
 
           Our commitment to organization allows us to
           <span class="emphasize">manage resources effectively</span>,
           <span class="emphasize">minimize disruptions</span>, and deliver
-          <span class="emphasize">superior service</span> . Through
+          <span class="emphasize">superior service</span>. Through
           <span class="emphasize">careful coordination</span> and
           <span class="emphasize">proactive problem-solving</span>. <br /><br />
 
-          we guarantee a <span class="emphasize">smooth</span> and
+          We guarantee a <span class="emphasize">smooth</span> and
           <span class="emphasize">satisfactory experience</span> for our
           clients.
         </div>
       </div>
     </div>
 
-    <!-- footer and stingray -->
-    <div style="display: flex; justify-content: space-between">
+    <!-- STRINGRAYS -->
+    <!-- <div style="display: flex; justify-content: space-between">
       <img
+        id="ray1"
         class="stingray stingray-style stingray-hover stingray-animation"
         src="/images/stingray.png"
-        alt="img-stingray1"
+        alt="img-stingray2"
       />
       <img
+        id="ray2"
         class="stingray2 stingray-style stingray-hover stingray-animation"
         src="/images/stingray2.png"
         alt="img-stingray2"
       />
-    </div>
+      <img
+        id="ray3"
+        class="stingray3 stingray-style stingray-hover stingray-animation"
+        src="/images/stingray2.png"
+        alt="img-stingray2"
+      />
+      <img
+        id="ray4"
+        class="stingray4 stingray-style stingray-hover stingray-animation"
+        src="/images/stingray2.png"
+        alt="img-stingray2"
+      />
+    </div> -->
+    <!-- <div class="container-ray">
+      <img
+        id="ray1"
+        class="ray"
+        src="/images/stingray2.png"
+        alt="img-stingray"
+      />
+    </div> -->
+    <!-- <div id="rays2" class="rays2">
+      <img src="/images/stingrayParallax.png" />
+    </div> -->
+
+    <!-- FOOTER -->
+    <div style="margin-top: 100px"></div>
     <div class="footer">
+      <!-- SOCIAL MEDIA -->
       <div class="social-media-flex">
         <div style="font-size: 25px">Follow us</div>
         <div class="social-media-row-flex">
@@ -263,6 +301,7 @@
           </a>
         </div>
       </div>
+      <!-- MARMOT TECH -->
       <div class="marmot-credit-flex">
         <div style="font-size: 25px">Coded and Designed by</div>
         <div>
@@ -277,8 +316,9 @@
       </div>
     </div>
 
-    <!-- IMPORT -->
+    <!-- IMPORTS -->
     <script src="../js/home.js"></script>
     <script src="/js/navbar.js"></script>
+    <script src="/js/parallaxTester.js"></script>
   </body>
 </html>
