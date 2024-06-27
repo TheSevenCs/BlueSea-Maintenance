@@ -26,16 +26,30 @@
       <!-- HEADER SECTION -->
       <div class="container-header">
         <!-- IMAGE -->
-        <img class="image-header" src="/images/about/Group 42.png" />
+        <img
+          class="image-header"
+          src="/images/about/Group 42.png"
+          style="z-index: 1"
+        />
 
         <!-- BANNER -->
-        <div class="banner-header">About Us</div>
+        <div class="banner-header" style="z-index: 2">About Us</div>
 
         <!-- BOTTOM LINE -->
         <div
           class="horizontal-line"
-          style="position: absolute; bottom: 2.5vh"
+          style="position: absolute; bottom: 2.5vh; z-index: 2"
         ></div>
+      </div>
+
+      <!-- FISH 1 -->
+      <div id="fish1" class="fish">
+        <img
+          class="element-with-fish-animation"
+          src="../images/fish.png"
+          style="width: 90%"
+          alt="indigenous fish picture"
+        />
       </div>
 
       <!-- 1ST SECTION -->
@@ -44,6 +58,7 @@
         <img src="/images/about/zack.png" class="img-zack border-shadow" />
         <div
           class="container-white title border-shadow font animated delayed-animation1"
+          style="font-family: 'Roboto'"
         >
           Zack Barnes<br />Founder of BlueSea Maintenance
         </div>
@@ -51,6 +66,7 @@
         <!-- DESCRIPTION BOX 1 -->
         <div
           class="container-white box1 border-shadow font animated delayed-animation1"
+          style="font-family: 'Roboto'"
         >
           YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP YAP
         </div>
@@ -65,13 +81,36 @@
           src="/images/placeholder.png"
           class="img-office border-shadow animated delayed-animation1"
         />
-        <div class="container-white box2 border-shadow font delayed-animation2">
+        <div
+          class="container-white box2 border-shadow font delayed-animation2"
+          style="font-family: 'Roboto'"
+        >
           MORE YAP
         </div>
       </div>
 
+      <!-- FISH 2 -->
+      <div
+        id="fish2"
+        class="fish"
+        style="
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+          right: 0;
+          margin-top: 200px;
+          margin-bottom: 0;
+        "
+      >
+        <img
+          class="element-with-fish-animation"
+          src="../images/fish.png"
+          style="width: 90%"
+          alt="indigenous fish picture"
+        />
+      </div>
+
       <!-- BAR AT BOTTOM OF PAGE -->
-      <div style="display: flex; justify-content: space-between">
+      <!-- <div style="display: flex; justify-content: space-between">
         <img
           class="stingray stingray-style stingray-hover stingray-animation"
           src="/images/stingray.png"
@@ -82,7 +121,8 @@
           src="/images/stingray2.png"
           alt="img-stingray2"
         />
-      </div>
+      </div> -->
+      <div style="margin-top: 270px"></div>
       <div class="footer" style="margin-top: 30px">
         <!-- SOCIAL MEDIA -->
         <div class="social-media-flex">

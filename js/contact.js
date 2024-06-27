@@ -17,3 +17,32 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(element);
   });
 });
+
+window.addEventListener("scroll", function () {
+  const scrollPosition = window.scrollY;
+
+  const fish1 = document.getElementById("fish1");
+  const fish2 = document.getElementById("fish2");
+  const fish3 = document.getElementById("fish3");
+
+  // fish1.style.transform =
+  //   "translateY(" +
+  //   (scrollPosition * 0.3 - 50) +
+  //   "px) translateX(" +
+  //   -75 +
+  //   "px)";
+  fish1.style.transform =
+    "translateY(" +
+    (scrollPosition * 0.3 - 350) +
+    "px) translateX(" +
+    -100 +
+    "px)";
+  fish2.style.transform =
+    "translateY(" +
+    (scrollPosition * 0.3 - 740) +
+    "px) translateX( " +
+    120 +
+    "px) scaleX(-1)";
+  fish3.style.transform =
+    "translateY(" + scrollPosition * 0.3 + "px) translateX(" + 250 + "px)";
+});

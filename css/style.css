@@ -57,6 +57,15 @@
   }
 }
 
+@font-face {
+  font-family: "Lato";
+  src: url("/css/Lato-Regular.woff");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/css/Roboto-Regular.woff");
+}
+
 body,
 html {
   height: auto;
@@ -149,6 +158,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Lato";
 }
 
 /* PAGE ELEMENTS */
@@ -192,6 +202,7 @@ img {
   height: 60px;
   z-index: 10;
   transition: background-color 0.4s ease-in;
+  font-family: "Lato";
 }
 .nav-bar a {
   flex: 1;
@@ -247,6 +258,8 @@ img {
   margin: 0 auto;
   color: #fff;
   z-index: 101;
+  font-family: "Lato";
+  /* font-family: "Roboto"; */
 }
 .marmot-credit-flex {
   margin-top: 46px;
@@ -276,7 +289,7 @@ img {
 .fish {
   position: absolute;
   mix-blend-mode: soft-light;
-  height: 678px;
+  height: auto;
   width: 678px;
 }
 .rays2 {
