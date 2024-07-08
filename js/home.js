@@ -50,7 +50,6 @@ window.addEventListener("scroll", function () {
   const fish1 = document.getElementById("fish1");
   const fish2 = document.getElementById("fish2");
   const fish3 = document.getElementById("fish3");
-
   const anchor = document.getElementById("anchor");
 
   fish1.style.transform =
@@ -59,8 +58,7 @@ window.addEventListener("scroll", function () {
   fish3.style.transform =
     "translateY(" + (scrollPosition * 0.3 - 950) + "px) scaleX(-1)";
 
-  anchor.style.transform =
-    "translateY(" + (scrollPosition * 0.83 - 1500) + "px)";
+  anchor.style.transform = "translateY(" + scrollPosition + "px)";
 });
 
 // lower % values make the image scroll slower == image is "further away from the screen"
