@@ -24,9 +24,6 @@ window.addEventListener("scroll", function () {
   anchor.style.transform =
     "translateY(" + (scrollPosition * 0.83 - 1500) + "px)";
 
-  if (anchor) {
-    console.log("DOND DALK DO ME LIKE A DHAD RIGHD NOW");
-  }
   // console.log("RAY X-POS: ", rays2XShift);
   // console.log("RAY Y-POS: ", rays2YShift);
   // console.log("TOP OF PAGE: ", scrollPosition);

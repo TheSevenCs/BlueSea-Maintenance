@@ -14,16 +14,6 @@
   width: auto;
 }
 
-.scroll-arrow {
-  width: 80px;
-  animation: arrow-down 0.5s 0.5s linear backwards;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5));
-  border-radius: 50%;
-
-  position: absolute;
-  bottom: 9vh;
-}
-
 .banner {
   background-image: url("../images/home/home-background-banner.png");
   /* max-width: 1920px; */
@@ -108,12 +98,11 @@
 @keyframes spinArrow {
   0% {
     opacity: 0;
-    transform: rotate(0deg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5));
   }
   100% {
     opacity: 1;
-    transform: rotate(-180deg) scale(1);
+    transform: scale(-1);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.15));
   }
 }
