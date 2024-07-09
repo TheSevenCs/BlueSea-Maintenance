@@ -301,7 +301,8 @@ img {
   position: absolute;
   mix-blend-mode: soft-light;
   height: auto;
-  width: 678px;
+  /* width: 678px; */
+  width: 400px;
 }
 .rays2 {
   position: absolute;

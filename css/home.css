@@ -129,9 +129,10 @@
 }
 
 #anchor {
-  position: relative;
-  margin-top: 1%;
-  z-index: 1; /* Adjust as needed to ensure proper layering */
-  opacity: 0.8; /* Optional: Makes the anchor look more distant */
-  transition: none; /* Remove any transitions to avoid delay */
+  /* position: relative; */
+  /* position: absolute; */
+  /* margin-top: 1%; */
+  /* z-index: 1; Adjust as needed to ensure proper layering */
+  /* opacity: 0.8; Optional: Makes the anchor look more distant */
+  /* transition: none; Remove any transitions to avoid delay */
 }
